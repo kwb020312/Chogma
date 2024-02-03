@@ -1,11 +1,5 @@
-import Room from "./Room";
-
 const page = () => {
-  return (
-    <Room>
-      <div className="text-xl">123</div>
-    </Room>
-  );
+  return <div className="text-5xl text-white">LiveBlocks Chogma</div>;
 };
 
 export default page;
