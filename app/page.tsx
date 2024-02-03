@@ -1,10 +1,9 @@
-import CollaborativeApp from "./CollaborativeApp";
 import Room from "./Room";
 
 const page = () => {
   return (
     <Room>
-      <CollaborativeApp />
+      <div className="text-xl">123</div>
     </Room>
   );
 };
