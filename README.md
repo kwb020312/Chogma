@@ -16,4 +16,4 @@ const handlePointerMove = useCallback((event: React.PointerEvent) => {
 }, []);
 ```
 
-해당 라이브러리를 통해 `사용자 채팅` 구현
+해당 라이브러리를 통해 `사용자 말풍선` 구현
