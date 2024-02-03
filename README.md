@@ -19,3 +19,5 @@ const handlePointerMove = useCallback((event: React.PointerEvent) => {
 ![image](https://github.com/kwb020312/Chogma/assets/46777310/a2fcf816-65e3-4042-87d3-045322d966d6)
 
 해당 라이브러리를 통해 `사용자 말풍선` 구현
+
+![image](https://github.com/kwb020312/Chogma/assets/46777310/1efaa357-3a2b-4f6c-855b-33169fa39ef3)
