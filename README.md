@@ -15,3 +15,5 @@ const handlePointerMove = useCallback((event: React.PointerEvent) => {
   updateMyPresence({ cursor: { x, y } });
 }, []);
 ```
+
+![image](https://github.com/kwb020312/Chogma/assets/46777310/a2fcf816-65e3-4042-87d3-045322d966d6)
