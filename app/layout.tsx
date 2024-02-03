@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={cn(workSans.className, "bg-primary-grey-200")}>
+      <body className={cn(workSans.className, "bg-slate-300")}>
         <Room>{children}</Room>
       </body>
     </html>
