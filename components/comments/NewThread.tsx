@@ -25,34 +25,19 @@ type Props = {
 };
 
 export const NewThread = ({ children }: Props) => {
-  // set state to track if we're placing a new comment or not
   const [creatingCommentState, setCreatingCommentState] = useState<
     "placing" | "placed" | "complete"
   >("complete");
 
-  /**
-   * We're using the useCreateThread hook to create a new thread.
-   *
-   * useCreateThread: https://liveblocks.io/docs/api-reference/liveblocks-react#useCreateThread
-   */
   const createThread = useCreateThread();
-
-  // get the max z-index of a thread
   const maxZIndex = useMaxZIndex();
-
-  // set state to track the coordinates of the composer (liveblocks comment editor)
   const [composerCoords, setComposerCoords] = useState<ComposerCoords>(null);
-
-  // set state to track the last pointer event
   const lastPointerEvent = useRef<PointerEvent>();
-
-  // set state to track if user is allowed to use the composer
   const [allowUseComposer, setAllowUseComposer] = useState(false);
   const allowComposerRef = useRef(allowUseComposer);
   allowComposerRef.current = allowUseComposer;
 
   useEffect(() => {
-    // If composer is already placed, don't do anything
     if (creatingCommentState === "complete") {
       return;
     }
