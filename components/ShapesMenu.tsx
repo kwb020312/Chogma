@@ -19,7 +19,7 @@ const ShapesMenu = ({
   imageInputRef,
 }: ShapesMenuProps) => {
   const isDropdownElem = item.value.some(
-    (elem) => elem?.value === activeElement.value
+    (elem) => elem?.value === activeElement?.value
   );
 
   return (
@@ -47,7 +47,7 @@ const ShapesMenu = ({
                 handleActiveElement(elem);
               }}
               className={`flex h-fit justify-between gap-10 rounded-none px-5 py-3 focus:border-none ${
-                activeElement.value === elem?.value
+                activeElement?.value === elem?.value
                   ? "bg-primary-green"
                   : "hover:bg-primary-grey-200"
               }`}
@@ -59,12 +59,12 @@ const ShapesMenu = ({
                   width={20}
                   height={20}
                   className={
-                    activeElement.value === elem?.value ? "invert" : ""
+                    activeElement?.value === elem?.value ? "invert" : ""
                   }
                 />
                 <p
                   className={`text-sm  ${
-                    activeElement.value === elem?.value
+                    activeElement?.value === elem?.value
                       ? "text-primary-black"
                       : "text-white"
                   }`}
