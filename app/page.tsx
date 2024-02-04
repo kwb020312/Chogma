@@ -5,10 +5,12 @@ import Navbar from "@/components/Navbar";
 
 const page = () => {
   return (
-    <div>
+    <main className="h-screen overflow-hidden">
       <Navbar />
-      <Live />
-    </div>
+      <section className="flex h-full flex-row">
+        <Live />
+      </section>
+    </main>
   );
 };
 
