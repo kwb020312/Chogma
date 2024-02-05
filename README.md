@@ -26,3 +26,14 @@ const handlePointerMove = useCallback((event: React.PointerEvent) => {
 `감정표현` 구현
 
 ![image](https://github.com/kwb020312/Chogma/assets/46777310/9f405304-989c-4ac6-8f81-09a39be17484)
+
+`실시간 접속자` 구현
+![image](https://github.com/kwb020312/Chogma/assets/46777310/a2c67f71-2b0f-48c1-94dd-61ee6ff145ff)
+
+---
+
+## 😀도형
+
+![image](https://github.com/kwb020312/Chogma/assets/46777310/bf041a33-17c1-4243-9df5-2b840ee5f33a)
+
+기본 `생성` 및 `이동`, `리사이징`, `각도 변경` 구현
