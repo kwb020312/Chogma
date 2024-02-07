@@ -1,5 +1,6 @@
 "use client";
 
+import Loader from "@/components/Loader";
 import { RoomProvider } from "@/liveblocks.config";
 import { LiveMap } from "@liveblocks/client";
 import { ClientSideSuspense } from "@liveblocks/react";
@@ -18,7 +19,7 @@ const Room = ({ children }: PropsWithChildren) => {
         canvasObjects: new LiveMap(),
       }}
     >
-      <ClientSideSuspense fallback={<div>로딩중...</div>}>
+      <ClientSideSuspense fallback={<Loader />}>
         {() => children}
       </ClientSideSuspense>
     </RoomProvider>

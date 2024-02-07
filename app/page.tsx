@@ -9,6 +9,7 @@ import RightSidebar from "@/components/RightSidebar";
 import { useEffect, useRef, useState } from "react";
 import {
   handleCanvasMouseDown,
+  handleCanvasMouseUp,
   handleCanvaseMouseMove,
   handleResize,
   initializeFabric,
@@ -22,6 +23,7 @@ const Page = () => {
   const isDrawing = useRef(false);
   const shapeRef = useRef<fabric.Object>(null);
   const selectedShapeRef = useRef<string | null>("rectangle");
+  const activeObjectRef = useRef<fabric.Object | null>(null);
 
   const canvasObjects = useStorage((root) => root.canvasObjects);
 
@@ -69,6 +71,18 @@ const Page = () => {
         shapeRef,
         selectedShapeRef,
         syncShapeInStorage,
+      });
+    });
+
+    canvas.on("mouse:up", (options) => {
+      handleCanvasMouseUp({
+        canvas,
+        isDrawing,
+        shapeRef,
+        selectedShapeRef,
+        syncShapeInStorage,
+        setActiveElement,
+        activeObjectRef,
       });
     });
 
