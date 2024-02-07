@@ -132,6 +132,10 @@ const Page = () => {
     window.addEventListener("resize", () => {
       handleResize({ canvas: fabricRef.current });
     });
+
+    return () => {
+      canvas.dispose();
+    };
   }, []);
 
   useEffect(() => {
