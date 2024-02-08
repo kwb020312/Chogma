@@ -29,7 +29,7 @@ const Page = () => {
   const fabricRef = useRef<fabric.Canvas>(null);
   const isDrawing = useRef(false);
   const shapeRef = useRef<fabric.Object>(null);
-  const selectedShapeRef = useRef<string | null>("rectangle");
+  const selectedShapeRef = useRef<string | null>(null);
   const activeObjectRef = useRef<fabric.Object | null>(null);
 
   const canvasObjects = useStorage((root) => root.canvasObjects);
@@ -150,11 +150,11 @@ const Page = () => {
     return () => {
       canvas.dispose();
     };
-  }, []);
+  }, [canvasRef]);
 
   useEffect(() => {
     renderCanvas({ fabricRef, canvasObjects, activeObjectRef });
-  }, []);
+  }, [canvasObjects]);
 
   return (
     <main className="h-screen overflow-hidden">
