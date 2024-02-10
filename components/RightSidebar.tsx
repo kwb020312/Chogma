@@ -35,7 +35,7 @@ const RightSidebar = ({
   };
   return (
     <section className="flex flex-col border-t border-primary-grey-200 bg-primary-black text-primary-grey-300 sticky right-0 h-full max-sm:hidden select-none">
-      <h3 className="px-5 pt-4 text-xs uppercase">Design</h3>
+      <h3 className="px-5 pt-4 text-xs uppercase">디자인</h3>
       <span className="text-xs text-primary-grey-300 mt-3 px-5 border-b border-primary-grey-200 pb-4">
         원하는대로 캔버스를 꾸며보세요
       </span>
@@ -55,14 +55,14 @@ const RightSidebar = ({
         inputRef={colorInputRef}
         attribute={elementAttributes.fill}
         attributeType="fill"
-        placeholder="color"
+        placeholder="색상"
         handleInputChange={handleInputChange}
       />
       <Color
         inputRef={strokeInputRef}
         attribute={elementAttributes.stroke}
         attributeType="stroke"
-        placeholder="stroke"
+        placeholder="테두리"
         handleInputChange={handleInputChange}
       />
       <Export />
