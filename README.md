@@ -37,3 +37,11 @@ const handlePointerMove = useCallback((event: React.PointerEvent) => {
 ![image](https://github.com/kwb020312/Chogma/assets/46777310/bf041a33-17c1-4243-9df5-2b840ee5f33a)
 
 기본 `생성` 및 `이동`, `리사이징`, `각도 변경` 구현
+
+---
+
+## 😁편집
+
+![image](https://github.com/kwb020312/Chogma/assets/46777310/e4d5cdce-ac94-42a4-b065-7420dc574e7e)
+
+생성된 레이어를 편집 및 배포 할 수 있도록 개발
