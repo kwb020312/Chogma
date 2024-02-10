@@ -11,6 +11,7 @@ import {
   handleCanvasMouseDown,
   handleCanvasMouseUp,
   handleCanvasObjectModified,
+  handleCanvasObjectScaling,
   handleCanvasSelectionCreated,
   handleCanvaseMouseMove,
   handleResize,
@@ -159,6 +160,13 @@ const Page = () => {
       handleCanvasSelectionCreated({
         options,
         isEditingRef,
+        setElementAttributes,
+      });
+    });
+
+    canvas.on("object:scaling", (options) => {
+      handleCanvasObjectScaling({
+        options,
         setElementAttributes,
       });
     });
