@@ -1,5 +1,7 @@
 # 🎨Chogma
 
+[Chogma로 디자인하기](https://chogma.vercel.app/)
+
 ## 👓사용자 상호작용
 
 ![image](https://github.com/kwb020312/Chogma/assets/46777310/a9641c4c-c6c5-4750-923b-10dd0f9ba354)
@@ -30,6 +32,9 @@ const handlePointerMove = useCallback((event: React.PointerEvent) => {
 `실시간 접속자` 구현
 ![image](https://github.com/kwb020312/Chogma/assets/46777310/a2c67f71-2b0f-48c1-94dd-61ee6ff145ff)
 
+`댓글` 구현
+![image](https://github.com/kwb020312/Chogma/assets/46777310/4d65be04-0fe0-4a23-a36b-4338a78aef17)
+
 ---
 
 ## 😀도형
@@ -45,3 +50,5 @@ const handlePointerMove = useCallback((event: React.PointerEvent) => {
 ![image](https://github.com/kwb020312/Chogma/assets/46777310/e4d5cdce-ac94-42a4-b065-7420dc574e7e)
 
 생성된 레이어를 편집 및 배포 할 수 있도록 개발
+
+---
