@@ -15,7 +15,7 @@ import {
 const selectConfigs = [
   {
     property: "fontFamily",
-    placeholder: "Choose a font",
+    placeholder: "폰트를 선택해주세요.",
     options: fontFamilyOptions,
   },
   { property: "fontSize", placeholder: "30", options: fontSizeOptions },
