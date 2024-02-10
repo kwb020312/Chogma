@@ -11,7 +11,7 @@ const LeftSidebar = ({ allShapes }: { allShapes: Array<any> }) => {
     () => (
       <section className="flex flex-col border-t border-primary-grey-200 bg-primary-black text-primary-grey-300 min-w-[227px] sticky left-0 h-full max-sm:hidden select-none overflow-y-auto pb-20">
         <h3 className="border border-primary-grey-200 px-5 py-4 text-xs uppercase">
-          Layers
+          레이어
         </h3>
         <div className="flex flex-col">
           {allShapes?.map((shape: any) => {
