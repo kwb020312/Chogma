@@ -14,6 +14,7 @@ const Room = ({ children }: PropsWithChildren) => {
         cursor: null,
         cursorColor: null,
         editingText: null,
+        message: null,
       }}
       initialStorage={{
         canvasObjects: new LiveMap(),
