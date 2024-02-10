@@ -1,6 +1,6 @@
 # 🎨Chogma
 
-[Chogma로 디자인하기](https://chogma.vercel.app/)
+🎨Figma를 직접 구현해서 활용해보자! [Chogma로 디자인하기](https://chogma.vercel.app/)
 
 ## 👓사용자 상호작용
 
