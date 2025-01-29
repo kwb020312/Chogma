@@ -2,7 +2,7 @@
 
 🎨Figma를 직접 구현해서 활용해보자! [Chogma로 디자인하기](https://chogma.vercel.app/)
 
-## 👓사용자 상호작용
+## 👓사용자 상호작용 
 
 ![image](https://github.com/kwb020312/Chogma/assets/46777310/a9641c4c-c6c5-4750-923b-10dd0f9ba354)
 라이브 블록을 사용하여 `Room`내에 위치한 `사용자 커서`를 공유하였음
